@@ -10,7 +10,7 @@ Each exercise is an independent .NET console application. Work through the stage
 - .NET SDK
 - Git
 
-The projects currently target `net9.0`. Install the matching SDK, or retarget all projects to `net8.0` after installing the .NET 8 SDK.
+The projects target `net8.0`. Install the .NET 8 SDK before building or running them.
 
 ## Run an Exercise
 
