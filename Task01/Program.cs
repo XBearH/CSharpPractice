@@ -2,13 +2,29 @@
 
 //Task01: Calculator with two numbers
 
-int a = 18;
-int b = 6;
-int c = a + b;
-Console.WriteLine(c);
+Console.WriteLine("Enter first number:");
+string input1 = Console.ReadLine()!;
+double num1 = double.Parse(input1);
 
-c = a - b;
-Console.WriteLine(c);
+Console.WriteLine("Enter second number:");
+string input2 = Console.ReadLine()!;
+double num2 = double.Parse(input2);
 
-c = a / b;
-Console.WriteLine(c);
+double sum = num1 + num2;
+double difference = num1 - num2;
+double product = num1 * num2;
+
+Console.WriteLine($"\nCalculation Results:");
+Console.WriteLine($"{num1} + {num2} = {sum}");
+Console.WriteLine($"{num1} - {num2} = {difference}");
+Console.WriteLine($"{num1} * {num2} = {product}");
+
+if (num2 != 0)
+{
+    double quotient = num1 / num2;
+    Console.WriteLine($"{num1} / {num2} = {quotient}");
+}
+else
+{
+    Console.WriteLine("Division by zero is not allowed.");
+}
